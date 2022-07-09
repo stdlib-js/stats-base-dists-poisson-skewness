@@ -76,7 +76,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.skewness;
+})();
 })();
 </script>
 ```
@@ -129,6 +131,7 @@ var v = skewness( -1.0 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-poisson-skewness@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var lambda;
 var v;
@@ -140,6 +143,7 @@ for ( i = 0; i < 10; i++ ) {
     console.log( 'λ: %d, skew(X;λ): %d', lambda.toFixed( 4 ), v.toFixed( 4 ) );
 }
 
+})();
 })();
 </script>
 </body>
